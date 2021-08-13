@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   background-image: linear-gradient(135deg, rgb(50, 0, 56), rgb(122, 0, 136));
   color: #fff;
+  padding: 50px;
 }
 
 .cardBx {
@@ -19,15 +20,14 @@ body {
   margin-bottom: 70px;
 }
 
-.user-card {
+.card {
   border-radius: 10px;
   position: relative;
-  max-width: 500px;
   margin: 20px 12px;
   padding: 30px;
 }
 
-.user-card::before {
+.card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -37,7 +37,13 @@ body {
   border-radius: 10px;
   /* background: transparent; */
   background-image: linear-gradient(-45deg, rgb(50, 0, 56), rgb(122, 0, 136));
-  box-shadow: 1px 1px 5px rgba(245, 224, 245, 0.8), inset -2px -2px 15px rgba(122, 0, 136, 0.7);
+  box-shadow: 1px 1px 5px rgba(245, 224, 245, 0.8),
+    inset -2px -2px 15px rgba(122, 0, 136, 0.7);
   filter: blur(3px);
   z-index: -1;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
 }
